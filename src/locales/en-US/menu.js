@@ -1,5 +1,7 @@
 export default {
   'menu.welcome': 'Welcome',
+  'menu.vote': 'Vote',
+  'menu.homework': 'Homework',
   'menu.more-blocks': 'More Blocks',
   'menu.home': 'Home',
   'menu.login': 'Login',

@@ -9,7 +9,7 @@ export default {
   "menu": {
     "locale": true
   },
-  "title": "Ant Design Pro",
+  "title": "校庆",
   "pwa": false,
   "iconfontUrl": "",
   "collapse": true,

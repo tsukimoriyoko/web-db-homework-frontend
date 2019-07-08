@@ -5,9 +5,10 @@ export default () => (
       textAlign: 'center',
     }}
   >
-    Want to add more pages? Please refer to{' '}
-    <a href="https://pro.ant.design/docs/block-cn" target="_blank" rel="noopener noreferrer">
-      use block
+    总之这里是主页。
+    到这里{' '}
+    <a href="/vote" rel="noopener noreferrer">
+      投票
     </a>
     。
   </p>

@@ -1,5 +1,7 @@
 export default {
   'menu.welcome': '欢迎',
+  'menu.vote': '投票',
+  'menu.homework': '作业展示',
   'menu.more-blocks': '更多区块',
   'menu.home': '首页',
   'menu.login': '登录',
