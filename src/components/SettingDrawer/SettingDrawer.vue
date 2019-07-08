@@ -304,7 +304,7 @@ export default {
           padding-top: 15px;
           padding-left: 24px;
           height: 100%;
-          color: #1890ff;
+          color: #722ed1;
           font-size: 14px;
           font-weight: 700;
         }
@@ -332,7 +332,7 @@ export default {
   .setting-drawer-index-handle {
     position: absolute;
     top: 240px;
-    background: #1890ff;
+    background: #722ed1;
     width: 48px;
     height: 48px;
     right: 300px;

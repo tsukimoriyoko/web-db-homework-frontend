@@ -261,7 +261,7 @@ export default {
         font-size: 14px;
 
         &:hover {
-          color: #1890ff;
+          color: #722ed1;
         }
       }
     }
@@ -284,7 +284,7 @@ export default {
         flex: 1 1 0;
 
         &:hover {
-          color: #1890ff;
+          color: #722ed1;
         }
       }
       .datetime {
@@ -331,7 +331,7 @@ export default {
       }
       &:hover {
         span {
-          color: #1890ff;
+          color: #722ed1;
         }
       }
     }
