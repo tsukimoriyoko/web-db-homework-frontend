@@ -17,7 +17,7 @@ module.exports = {
       // TODO 需要增加根据环境不开启主题需求
       new ThemeColorReplacer({
         fileName: 'css/theme-colors-[contenthash:8].css',
-        matchColors: getAntdSerials('#722ed1'), // 主色系列
+        matchColors: getAntdSerials('#1890ff'), // 主色系列
         // 改变样式选择器，解决样式覆盖问题
         changeSelector (selector) {
           switch (selector) {

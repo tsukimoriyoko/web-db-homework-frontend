@@ -3,7 +3,7 @@
   <page-view :avatar="avatar" :title="false">
     <div slot="headerContent">
       <div class="title">{{ timeFix }}，{{ user.name }}<span class="welcome-text">，{{ welcome() }}</span></div>
-      <div>养殖工程师 | 鸽子金服 - 咕咕咕事业群 - VUE平台</div>
+      <div>前端工程师 | 蚂蚁金服 - 某某某事业群 - VUE平台</div>
     </div>
     <div slot="extra">
       <a-row class="more-info">
@@ -261,7 +261,7 @@ export default {
         font-size: 14px;
 
         &:hover {
-          color: #722ed1;
+          color: #1890ff;
         }
       }
     }
@@ -284,7 +284,7 @@ export default {
         flex: 1 1 0;
 
         &:hover {
-          color: #722ed1;
+          color: #1890ff;
         }
       }
       .datetime {
@@ -331,7 +331,7 @@ export default {
       }
       &:hover {
         span {
-          color: #722ed1;
+          color: #1890ff;
         }
       }
     }

@@ -84,7 +84,7 @@ export default {
         display: inline-block;
         width: 100%;
         &:hover {
-          color: #722ed1;
+          color: #1890ff;
         }
       }
     }
