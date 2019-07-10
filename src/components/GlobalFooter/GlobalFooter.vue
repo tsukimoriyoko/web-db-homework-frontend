@@ -4,9 +4,9 @@
       <a
         href="https://pro.loacg.com/"
         target="_blank"
-      >Pro 首页</a>
+      >Ant Design Pro</a>
       <a
-        href="https://github.com/sendya/ant-design-pro-vue"
+        href="https://github.com/tsukimoriyoko/web-db-homework-frontend"
         target="_blank"
       >
         <a-icon type="github" />
@@ -16,7 +16,7 @@
     </div>
     <div class="copyright">
       Copyright
-      <a-icon type="copyright" /> 2018 <span>白鹭学园技术组出品</span>
+      <a-icon type="copyright" /> 2019 <span>咕咕咕技术组出品</span>
     </div>
   </div>
 </template>
