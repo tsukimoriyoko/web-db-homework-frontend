@@ -289,8 +289,13 @@ export default {
     font-size: 16px;
     height: 40px;
     width: 100%;
+    background-color: #722ED1;
+    border: #722ED1;
+    &:hover{
+      background-color:rgba(114, 46, 209, 0.85);
+    }
   }
-
+  
   .user-login-other {
     text-align: left;
     margin-top: 24px;
