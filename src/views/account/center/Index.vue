@@ -8,19 +8,19 @@
               <img :src="avatar()">
             </div>
             <div class="username">{{ nickname() }}</div>
-            <div class="bio">海纳百川，有容乃大</div>
+            <div class="bio">道理我都懂，可这鸽子为什么这么大</div>
           </div>
           <div class="account-center-detail">
             <p>
-              <i class="title"></i>交互专家
+              <i class="title"></i>可燃垃圾
             </p>
             <p>
-              <i class="group"></i>蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED
+              <i class="group"></i>南开大学－计算机学院－校庆101小组－UED
             </p>
             <p>
               <i class="address"></i>
-              <span>浙江省</span>
-              <span>杭州市</span>
+              <span>天津市</span>
+              <span>津南区</span>
             </p>
           </div>
           <a-divider/>
@@ -111,7 +111,7 @@ export default {
   },
   data () {
     return {
-      tags: ['很有想法的', '专注设计', '辣~', '大长腿', '川妹子', '海纳百川'],
+      tags: ['很有想法的', '专注设计', '咕咕咕', '随便写的'],
 
       tagInputVisible: false,
       tagInputValue: '',
