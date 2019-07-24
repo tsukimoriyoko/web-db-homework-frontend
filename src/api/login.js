@@ -4,7 +4,7 @@ import { axios } from '@/utils/request'
 /**
  * login func
  * parameter: {
- *     username: '',
+ *     nickname: '',
  *     password: '',
  *     remember_me: true,
  *     captcha: '12345'
@@ -40,7 +40,7 @@ export function getInfo () {
 
 export function logout () {
   return axios({
-    url: '/auth/logout',
+    url: '/happy-user/logout',
     method: 'post',
     headers: {
       'Content-Type': 'application/json;charset=UTF-8'

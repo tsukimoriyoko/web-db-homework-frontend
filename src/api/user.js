@@ -18,7 +18,7 @@ export function getUser(id) {
 // 增加用户
 export function addUser(parameter) {
   return axios({
-    url: api.user,
+    url: '/happy-user/add',
     method: 'post',
     data: parameter
   })

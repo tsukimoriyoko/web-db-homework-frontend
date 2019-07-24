@@ -17,7 +17,7 @@
     <a-card
       style="margin-top: 24px"
       :bordered="false"
-      title="标准列表">
+      title="所有投票">
 
       <!--<a-list size="large" :pagination="{showSizeChanger: true, showQuickJumper: true, pageSize: 5, total: 50}">-->
         <a-list-item :key="index" v-for="(item, index) in data">
@@ -48,6 +48,7 @@
 import HeadInfo from '@/components/tools/HeadInfo'
 import TaskForm from './modules/TaskForm'
 import { getallvote } from '@/api/allvote'
+
 export default {
   name: 'StandardList',
   components: {
@@ -56,7 +57,7 @@ export default {
   },
   data () {
     return {
-      data: []
+      data: {}
     }
   },
   mounted: function () {

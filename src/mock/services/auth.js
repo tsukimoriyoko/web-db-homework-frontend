@@ -1,20 +1,20 @@
 import Mock from 'mockjs2'
 import { builder, getBody } from '../util'
 
-const username = ['admin', 'user', 'super']
-const password = ['21232f297a57a5a743894a0e4a801fc3', '8914de686ab28dc22f30d3d8e107ff6c'] // admin, ant.design
+const nickname = ['admin', 'user', 'super']
+const password = ['21232f297a57a5a743894a0e4a801fc3', '8914de686ab28dc22f30d3d8e107ff6c', '5c4c0386cdf7c0bb9c4b7b6e0ceedd95250e3e6a6d8a6415aeab4f7ef679eff7'] // admin, ant.design
 
 const login = (options) => {
   const body = getBody(options)
   console.log('mock: body', body)
-  if (!username.includes(body.username) || !password.includes(body.password)) {
+  if (!nickname.includes(body.nickname) || !password.includes(body.password)) {
     return builder({ isLogin: true }, '账户或密码错误', 401)
   }
 
   return builder({
     'id': Mock.mock('@guid'),
     'name': Mock.mock('@name'),
-    'username': 'admin',
+    'nickname': 'admin',
     'password': '',
     'avatar': 'https://gw.alipayobjects.com/zos/rmsportal/jZUIxmJycoymBprLOUbT.png',
     'status': 1,

@@ -6,7 +6,7 @@ const info = (options) => {
   const userInfo = {
     'id': '4291d7da9005377ec9aec4a71ea837f',
     'name': '南开大学',
-    'username': 'admin',
+    'nickname': 'admin',
     'password': '',
     'avatar': '/avatar.png',
     'status': 1,
@@ -366,8 +366,8 @@ const info = (options) => {
     'dataAccess': null
   })
 
-  userInfo.role = roleObj
-  return builder(userInfo)
-}
+  userInfo.role = roleObj;
+  return builder(userInfo);
+};
 
-Mock.mock(/\/api\/user\/info/, 'get', info)
+Mock.mock(/\/api\/user\/info/, 'get', info);

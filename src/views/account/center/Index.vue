@@ -7,7 +7,7 @@
             <div class="avatar">
               <img :src="avatar()">
             </div>
-            <div class="username">{{ nickname() }}</div>
+            <div class="nickname">{{ nickname() }}</div>
             <div class="bio">道理我都懂，可这鸽子为什么这么大</div>
           </div>
           <div class="account-center-detail">
@@ -210,7 +210,7 @@ export default {
       }
     }
 
-    .username {
+    .nickname {
       color: rgba(0, 0, 0, 0.85);
       font-size: 20px;
       line-height: 28px;

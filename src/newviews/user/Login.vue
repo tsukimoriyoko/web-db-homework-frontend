@@ -19,8 +19,8 @@
               type="text"
               placeholder="账户: admin"
               v-decorator="[
-                'username',
-                {rules: [{ required: true, message: '请输入帐户名或邮箱地址' }, { validator: handleUsernameOrEmail }], validateTrigger: 'change'}
+                'nickname',
+                {rules: [{ required: true, message: '请输入帐户名或邮箱地址' }, { validator: handlenicknameOrEmail }], validateTrigger: 'change'}
               ]"
             >
               <a-icon slot="prefix" type="user" :style="{ color: 'rgba(0,0,0,.25)' }"/>
@@ -32,7 +32,7 @@
               size="large"
               type="password"
               autocomplete="false"
-              placeholder="密码: admin or ant.design"
+              placeholder="密码: admin"
               v-decorator="[
                 'password',
                 {rules: [{ required: true, message: '请输入密码' }], validateTrigger: 'blur'}
@@ -129,7 +129,7 @@ export default {
     return {
       customActiveKey: 'tab1',
       loginBtn: false,
-      // login type: 0 email, 1 username, 2 telephone
+      // login type: 0 email, 1 nickname, 2 telephone
       loginType: 0,
       requiredTwoStepCaptcha: false,
       stepCaptchaVisible: false,
@@ -137,7 +137,7 @@ export default {
       state: {
         time: 60,
         loginBtn: false,
-        // login type: 0 email, 1 username, 2 telephone
+        // login type: 0 email, 1 nickname, 2 telephone
         loginType: 0,
         smsSendBtn: false
       }
@@ -156,7 +156,7 @@ export default {
   methods: {
     ...mapActions(['Login', 'Logout']),
     // handler
-    handleUsernameOrEmail (rule, value, callback) {
+    handlenicknameOrEmail (rule, value, callback) {
       const { state } = this
       const regex = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/
       if (regex.test(value)) {
