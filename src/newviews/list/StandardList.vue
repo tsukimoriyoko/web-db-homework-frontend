@@ -1,15 +1,15 @@
 <template>
-  <div id="vote">
+  <div>
     <a-card :bordered="false">
       <a-row>
         <a-col :sm="8" :xs="24">
-          <head-info title="校庆101" content="小哥哥最帅" :bordered="true"/>
+          <head-info title="我的待办" content="8个任务" :bordered="true"/>
         </a-col>
         <a-col :sm="8" :xs="24">
-          <head-info title="校庆101" content="小姐姐最美" :bordered="true"/>
+          <head-info title="本周任务平均处理时间" content="32分钟" :bordered="true"/>
         </a-col>
         <a-col :sm="8" :xs="24">
-          <head-info title="校庆101" content="快来投票吧"/>
+          <head-info title="本周完成任务数" content="24个"/>
         </a-col>
       </a-row>
     </a-card>
@@ -17,7 +17,20 @@
     <a-card
       style="margin-top: 24px"
       :bordered="false"
-      title="活动列表">
+      title="标准列表">
+
+      <div slot="extra">
+        <a-radio-group>
+          <a-radio-button>全部</a-radio-button>
+          <a-radio-button>进行中</a-radio-button>
+          <a-radio-button>等待中</a-radio-button>
+        </a-radio-group>
+        <a-input-search style="margin-left: 16px; width: 272px;" />
+      </div>
+
+      <div class="operate">
+        <a-button type="dashed" style="width: 100%" icon="plus" @click="$refs.taskForm.add()">添加</a-button>
+      </div>
 
       <a-list size="large" :pagination="{showSizeChanger: true, showQuickJumper: true, pageSize: 5, total: 50}">
         <a-list-item :key="index" v-for="(item, index) in data">
@@ -29,13 +42,13 @@
             <a>编辑</a>
           </div>
           <div slot="actions">
-             <a-dropdown>
+            <a-dropdown>
               <a-menu slot="overlay">
                 <a-menu-item><a>编辑</a></a-menu-item>
-               <a-menu-item><a>删除</a></a-menu-item>
+                <a-menu-item><a>删除</a></a-menu-item>
               </a-menu>
               <a>更多<a-icon type="down"/></a>
-             </a-dropdown>
+            </a-dropdown>
           </div>
           <div class="list-content">
             <div class="list-content-item">
@@ -57,7 +70,7 @@
     </a-card>
   </div>
 </template>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 <script>
 import HeadInfo from '@/components/tools/HeadInfo'
 import TaskForm from './modules/TaskForm'

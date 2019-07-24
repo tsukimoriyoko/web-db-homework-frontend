@@ -22,14 +22,14 @@ export const asyncRouterMap = [
       {
         path: '/all-votes',
         name: 'AllVotes',
-        component: () => import('@/views/all-votes/AllVotes'),
+        component: () => import('@/newviews/all-votes/AllVotes'),
         meta: { title: '所有投票', icon: 'flag', keepAlive: true, permission: [ 'table' ] }
       },
 
       {
         path: '/create-vote',
-        name: 'AdvanceForm',
-        component: () => import('@/views/create-vote/AdvancedForm'),
+        name: 'TaskForm',
+        component: () => import('@/newviews/create-vote/AdvancedForm'),
         meta: { title: '创建投票', icon: 'edit', keepAlive: true, permission: [ 'form' ] }
       },
 
