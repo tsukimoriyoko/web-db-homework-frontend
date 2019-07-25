@@ -14,7 +14,7 @@ import {
 const user = {
     state: {
       token: '',
-      name: '',
+      name: '南开大学',
       welcome: '',
       avatar: '/avatar.png',
       roles: [{
@@ -356,7 +356,7 @@ const user = {
           commit('SET_TOKEN', result.accessToken);
 
           commit('SET_ROLES', user.role);
-          commit('SET_INFO', result);
+          commit('SET_INFO', result.conten);
           
           commit('SET_NAME', {
             name: result.nickname,

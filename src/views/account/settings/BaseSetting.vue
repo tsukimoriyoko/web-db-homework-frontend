@@ -81,10 +81,10 @@ export default {
       // cropper
       preview: {},
       option: {
-        img: '/avatar2.jpg',
+        img: '/avatar.png',
         info: true,
         size: 1,
-        outputType: 'jpeg',
+        outputType: 'png',
         canScale: false,
         autoCrop: true,
         // 只有自动截图开启 宽度高度才生效

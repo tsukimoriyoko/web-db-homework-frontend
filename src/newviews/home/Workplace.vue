@@ -8,13 +8,13 @@
     <div slot="extra">
       <a-row class="more-info">
         <a-col :span="8">
-          <head-info title="项目数" content="56" :center="false" :bordered="false"/>
+          <head-info title="活动数" content="56" :center="false" :bordered="false"/>
         </a-col>
         <a-col :span="8">
           <head-info title="团队排名" content="8/24" :center="false" :bordered="false"/>
         </a-col>
         <a-col :span="8">
-          <head-info title="项目访问" content="2,223" :center="false" />
+          <head-info title="网站访问" content="2,333" :center="false" />
         </a-col>
       </a-row>
     </div>
@@ -27,9 +27,9 @@
             :loading="loading"
             style="margin-bottom: 24px;"
             :bordered="false"
-            title="进行中的项目"
+            title="进行中的投票"
             :body-style="{ padding: 0 }">
-            <a slot="extra">全部项目</a>
+            <a slot="extra">全部投票</a>
             <div>
               <a-card-grid class="project-card-grid" :key="i" v-for="(item, i) in projects">
                 <a-card :bordered="false" :body-style="{ padding: 0 }">

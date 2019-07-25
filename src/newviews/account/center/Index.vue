@@ -122,15 +122,11 @@ export default {
       tabListNoTitle: [
         {
           key: 'article',
-          tab: '文章(8)'
+          tab: '文章(3)'
         },
         {
           key: 'app',
-          tab: '应用(8)'
-        },
-        {
-          key: 'project',
-          tab: '项目(8)'
+          tab: '投票(7)'
         }
       ],
       noTitleKey: 'app'
